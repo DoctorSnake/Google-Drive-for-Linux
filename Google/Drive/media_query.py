@@ -38,7 +38,7 @@ class Uploader:
             
                 
     def uploadFiles(self, files):
-        while files is not []:
+        while len(files) is not 0:
             file = files.pop()
             status = self.uploadFile(file)
             if status in [200, 400]:
